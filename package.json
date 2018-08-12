@@ -1,0 +1,11 @@
+{
+  "name": "pizzabasball",
+  "version": "1.0.0",
+  "description": "App to tweet 50% Papa Johns discount codes when they apply",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Keane",
+  "license": "ISC"
+}
