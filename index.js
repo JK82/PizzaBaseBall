@@ -1,13 +1,12 @@
-console.log('Hello World')
 const teams = require('./teams/constants')
 const api = require('./api')
+const composeTweet = require('./twitter/tweetList')
 const {getDayOfWeek, getYesterdaysDate} = require('./utils')
 
 const processTeamLogic = (team, game, isHomeTeam) => {
     // Does the team need to win on a certain day
     if (team.day.length) {
         // Is today that day
-        console.log(getDayOfWeek(getYesterdaysDate()))
         const todaysDay = getDayOfWeek(getYesterdaysDate())
         if (team.day === todaysDay) {
             // Did the team win
@@ -24,6 +23,13 @@ const processTeamLogic = (team, game, isHomeTeam) => {
             return game.teams.home.score >= team.runCount
         } else {
             return game.teams.away.score >= team.runCount
+        }
+    } else if (!team.runs && !team.winOnDay && team.win) {
+        // Just need win
+        if (isHomeTeam) {
+            return game.teams.home.isWinner
+        } else {
+            return game.teams.away.isWinner
         }
     }
 }
@@ -60,10 +66,10 @@ const processGames = (eligibleGames) => {
         }
     })
 
-    console.log(freePizzaIds)
+    return freePizzaIds
 }
 
-api.getYesterdaysGames()
+api.getYesterdaysGames(getYesterdaysDate())
     .then((games) => {
         const papaJohnsEligibleGames = games.filter((game) => {
             return teams.some((team) => {
@@ -74,6 +80,11 @@ api.getYesterdaysGames()
             })
         })
 
-        processGames(papaJohnsEligibleGames)
+        const arrayOfTeamIds = processGames(papaJohnsEligibleGames)
+        const teamsToTweetAt = teams.filter((team) =>
+            arrayOfTeamIds.includes(team.apiId)
+        )
+
+        teamsToTweetAt.map((team) => console.log(composeTweet(team)))
     })
     .catch((err) => console.log(err))

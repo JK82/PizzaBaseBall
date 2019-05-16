@@ -1,10 +1,10 @@
 const request = require('superagent')
 
 const api = {
-    getYesterdaysGames: () =>
+    getYesterdaysGames: (yesterdaysDate) =>
         request
             .get(
-                'http://statsapi.mlb.com/api/v1/schedule/?sportId=1&date=05/14/2019'
+                `http://statsapi.mlb.com/api/v1/schedule/?sportId=1&date=${yesterdaysDate}`
             )
             .then((res) => JSON.parse(res.text))
             .then((json) => {
