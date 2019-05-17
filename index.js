@@ -2,6 +2,7 @@ const teams = require('./teams/constants')
 const api = require('./api')
 const composeTweet = require('./twitter/tweetList')
 const {getDayOfWeek, getYesterdaysDate} = require('./utils')
+const Twitter = require('./twitter/tweet')
 
 const processTeamLogic = (team, game, isHomeTeam) => {
     // Does the team need to win on a certain day
@@ -57,7 +58,6 @@ const doesTeamQualifyForFreePizza = (game) => {
 }
 
 const processGames = (eligibleGames) => {
-    console.log('PROCESING')
     const freePizzaIds = []
     eligibleGames.map((game) => {
         const teamId = doesTeamQualifyForFreePizza(game)
@@ -85,6 +85,14 @@ api.getYesterdaysGames(getYesterdaysDate())
             arrayOfTeamIds.includes(team.apiId)
         )
 
-        teamsToTweetAt.map((team) => console.log(composeTweet(team)))
+        teamsToTweetAt.map((team) => {
+            Twitter.post(
+                'statuses/update',
+                {status: composeTweet(team)},
+                (err, data, response) => {
+                    console.log('TWEETED')
+                }
+            )
+        })
     })
     .catch((err) => console.log(err))
