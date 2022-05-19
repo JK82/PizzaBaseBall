@@ -10,9 +10,9 @@ const teams = [
         runCount: 0,
         winOnday: false,
         day: '',
-        papaJohnsCode: 'CARDSWIN!',
+        papaJohnsCode: 'CARDSWIN',
         twitterHandle: '@Cardinals',
-        hashtag: '#STLCards',
+        hashtag: '#STLCards'
     },
 
     {
@@ -25,7 +25,7 @@ const teams = [
         day: '',
         papaJohnsCode: 'BUCSWIN',
         twitterHandle: '@Pirates',
-        hashtag: '#LetsGoBucs',
+        hashtag: '#LetsGoBucs'
     },
 
     {
@@ -38,7 +38,7 @@ const teams = [
         day: '',
         papaJohnsCode: 'ROXWIN',
         twitterHandle: '@Rockies',
-        hashtag: '#RoxWin',
+        hashtag: '#RoxWin'
     },
 
     {
@@ -51,7 +51,7 @@ const teams = [
         day: '',
         papaJohnsCode: 'DBACKS50',
         twitterHandle: '@Dbacks',
-        hashtag: '#Dbacks',
+        hashtag: '#Dbacks'
     },
 
     {
@@ -64,7 +64,7 @@ const teams = [
         day: '',
         papaJohnsCode: 'MARINERS5',
         twitterHandle: '@Mariners',
-        hashtag: '#TrueToTheBlue',
+        hashtag: '#SeaUsRise'
     },
 
     {
@@ -77,7 +77,7 @@ const teams = [
         day: '',
         papaJohnsCode: 'PHILLIES',
         twitterHandle: '@Phillies',
-        hashtag: '#Phillies',
+        hashtag: '#RingTheBell'
     },
 
     {
@@ -90,7 +90,7 @@ const teams = [
         day: '',
         papaJohnsCode: 'BREWERS50',
         twitterHandle: '@Brewers',
-        hashtag: '#ThisIsMyCrew',
+        hashtag: '#ThisIsMyCrew'
     },
 
     {
@@ -103,7 +103,7 @@ const teams = [
         day: '',
         papaJohnsCode: 'ORIOLES5',
         twitterHandle: '@Orioles',
-        hashtag: '#Orioles',
+        hashtag: '#Orioles'
     },
 
     {
@@ -116,7 +116,7 @@ const teams = [
         day: '',
         papaJohnsCode: 'TWINSWIN',
         twitterHandle: '@Twins',
-        hashtag: '#MNTwins',
+        hashtag: '#MNTwins'
     },
 
     {
@@ -129,7 +129,7 @@ const teams = [
         day: '',
         papaJohnsCode: 'DODGERS5',
         twitterHandle: '@Dodgers‏',
-        hashtag: '#Dodgers',
+        hashtag: '#Dodgers'
     },
 
     {
@@ -142,7 +142,7 @@ const teams = [
         day: '',
         papaJohnsCode: 'ROYALS5',
         twitterHandle: '@Royals‏',
-        hashtag: '#RaisedRoyal',
+        hashtag: '#TogetherRoyal'
     },
 
     {
@@ -155,7 +155,7 @@ const teams = [
         day: '',
         papaJohnsCode: 'ROYALS5',
         twitterHandle: '@whitesox‏',
-        hashtag: '#WhiteSox',
+        hashtag: '#ChangeTheGame'
     },
 
     {
@@ -167,8 +167,8 @@ const teams = [
         winOnday: false,
         day: '',
         papaJohnsCode: 'TRIBE5',
-        twitterHandle: '@Indians',
-        hashtag: '#RallyTogether',
+        twitterHandle: '@CleGuardians',
+        hashtag: '#ForTheLand'
     },
 
     {
@@ -181,7 +181,7 @@ const teams = [
         day: '',
         papaJohnsCode: 'MARLINS5',
         twitterHandle: '@Marlins',
-        hashtag: '#JustGettinStarted',
+        hashtag: '#MakeItMiami'
     },
 
     {
@@ -194,7 +194,7 @@ const teams = [
         day: '',
         papaJohnsCode: 'PADRES5',
         twitterHandle: '@Padres',
-        hashtag: '#LetsGoPadres',
+        hashtag: '#TimeToShine'
     },
 
     {
@@ -207,7 +207,7 @@ const teams = [
         day: '',
         papaJohnsCode: 'YANKEES6',
         twitterHandle: '@Yankees',
-        hashtag: '#StartSpreadingTheNews',
+        hashtag: '#RepBX'
     },
 
     {
@@ -220,7 +220,7 @@ const teams = [
         day: '',
         papaJohnsCode: 'NATS50',
         twitterHandle: '@Nationals',
-        hashtag: '#Nationals',
+        hashtag: '#NATITUDE'
     },
 
     {
@@ -233,7 +233,7 @@ const teams = [
         day: '',
         papaJohnsCode: 'RAYS6',
         twitterHandle: '@RaysBaseball',
-        hashtag: '#RaysUp',
+        hashtag: '#RaysUp'
     },
 
     {
@@ -246,7 +246,7 @@ const teams = [
         day: '',
         papaJohnsCode: 'RANGERS7',
         twitterHandle: '@Rangers',
-        hashtag: '#TexasRangers',
+        hashtag: '#StraightUpTX'
     },
 
     {
@@ -259,7 +259,7 @@ const teams = [
         day: 'Tuesday',
         papaJohnsCode: 'ASTROS',
         twitterHandle: '@astros',
-        hashtag: '#Astros',
+        hashtag: '#LevelUp'
     },
     {
         apiId: 144,
@@ -271,8 +271,8 @@ const teams = [
         day: '',
         papaJohnsCode: 'BRAVES5',
         twitterHandle: '@Braves',
-        hashtag: '#ChopOn',
-    },
+        hashtag: '#ForTheA'
+    }
 ]
 
 module.exports = teams

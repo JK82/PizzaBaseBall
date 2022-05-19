@@ -6,9 +6,11 @@ const Twitter = require('./twitter/tweet')
 
 const processTeamLogic = (team, game, isHomeTeam) => {
     // Does the team need to win on a certain day
+
     if (team.day.length) {
         // Is today that day
         const todaysDay = getDayOfWeek(getYesterdaysDate())
+
         if (team.day === todaysDay) {
             // Did the team win
             if (isHomeTeam) {
@@ -84,6 +86,8 @@ api.getYesterdaysGames(getYesterdaysDate())
         const teamsToTweetAt = teams.filter((team) =>
             arrayOfTeamIds.includes(team.apiId)
         )
+
+        console.log(teamsToTweetAt)
 
         teamsToTweetAt.map((team) => {
             Twitter.post(
