@@ -101,7 +101,7 @@ const teams = [
         runCount: 5,
         winOnday: false,
         day: '',
-        papaJohnsCode: 'ORIOLES5',
+        papaJohnsCode: 'ORIOLES50',
         twitterHandle: '@Orioles',
         hashtag: '#Orioles'
     },
