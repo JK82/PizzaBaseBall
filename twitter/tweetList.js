@@ -18,7 +18,7 @@ const composeTweet = ({twitterHandle, papaJohnsCode, hashtag}) => {
         `Feeling peckish? Thanks to ${twitterHandle} today you can get 50% off Papa Johns Pizza with promo code ${papaJohnsCode} ... ${hashtag} #pizza #promocode @PapaJohns 🍕`,
         `${hashtag} ... LAAARRRRRGE PIZZA PLEASE! 50% off thanks to ${twitterHandle} use promo code ${papaJohnsCode} #pizza #promocode @PapaJohns 🍕`,
         `Did somebody say half price Pizza? ${hashtag} use promo code ${papaJohnsCode} #pizza #promocode @PapaJohns 🍕`,
-        `50% Off, ${hashtag}, Papa Johns, Promo Code ${papaJohnsCode} thanks ${papaJohnsCode} #pizza #promocode @PapaJohns 🍕`,
+        `50% Off, ${hashtag}, Papa Johns, Promo Code ${papaJohnsCode} thanks ${twitterHandle} #pizza #promocode @PapaJohns 🍕`,
         `🍕🍕🍕 ${hashtag} ... ${papaJohnsCode}  <-- 50% off Papa Johns today #pizza #promocode @PapaJohns 🍕`,
         `.${twitterHandle} ⚾ + Papa John's 🍕 = 50% Off use code ${papaJohnsCode} #pizza #promocode @PapaJohns 🍕`
     ]
