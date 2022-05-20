@@ -153,7 +153,7 @@ const teams = [
         runCount: 0,
         winOnday: false,
         day: '',
-        papaJohnsCode: 'ROYALS5',
+        papaJohnsCode: 'SOXWIN',
         twitterHandle: '@whitesox‏',
         hashtag: '#ChangeTheGame'
     },
